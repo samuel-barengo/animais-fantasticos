@@ -1,5 +1,5 @@
-export default function initFecthBitcoin() {
-    fetch('https://blockchain.info/ticker')
+export default function fecthBitcoin(url) {
+    fetch(url)
         .then(r => r.json())
         .then(bitcoin => {
             const btcPreco = document.querySelector('.btc-preco');

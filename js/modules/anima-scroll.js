@@ -1,10 +1,11 @@
 //ANIMAÇÃO AO SCROLL
+import debounce from "./debounce.js";
 export default class AnimaScroll {
     constructor(sections) {
-        this.sections = document.querySelectorAll(sections)
+        this.sections = document.querySelectorAll(sections);
         this.windowMetade = window.innerHeight * 0.6;
 
-        this.checkDistance = this.checkDistance.bind(this);
+        this.checkDistance = debounce(this.checkDistance.bind(this),50);
     }
     getDistance() { // Desestruturando uma node-List para array
         this.distance = [...this.sections].map((section) => {

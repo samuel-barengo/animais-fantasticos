@@ -9,7 +9,7 @@ export default class DropdownMenu {
         if (event === undefined) this.events = ['click', 'touchstart'];
         else this.events = events;
 
-        this.addDopDownMenusEvents = this.addDopDownMenusEvents.bind(this);
+        this.activeDropdownMenu = this.activeDropdownMenu.bind(this);
     }
 
     // ativa o dropDown menu e adicona
@@ -24,7 +24,7 @@ export default class DropdownMenu {
     }
 
     // Adicona os eventos ao dopdownmenu
-    addDopDownMenusEvents() {
+    addDopDownMenusEvent() {
         this.dropDownMenus.forEach(menu => {
             this.events.forEach(userEvent => {
                 menu.addEventListener(userEvent, this.activeDropdownMenu);
@@ -34,12 +34,8 @@ export default class DropdownMenu {
 
     init() {
         if (this.dropDownMenus.length) {
-            this.addDopDownMenusEvents();
+            this.addDopDownMenusEvent();
         }
         return this;
     }
 }
-
-
-//     //menu.addEventListener('click', handleClick);
-//     //menu.addEventListener('touchstart', handleClick);

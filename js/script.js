@@ -32,10 +32,10 @@ const dropdownMenu = new DropdownMenu('[data-dropdown]');
 dropdownMenu.init();
 
 const menuMobile = new MenuMobile('[data-menu="buttom"]', '[data-menu="list"]')
-menuMobile.init()
+menuMobile.init();
 
 const funcionamento = new Funcionamento('[data-semana]', 'aberto');
 funcionamento.init();
 
-fetchAnimais('./animaisapi.json', '.numeros-grid');
+fetchAnimais('./animaisapi.json', '.numeros-grid')
 fecthBitcoin('https://blockchain.info/ticker');

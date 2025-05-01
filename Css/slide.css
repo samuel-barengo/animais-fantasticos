@@ -1,11 +1,10 @@
 .galeria {
-    grid-template-columns: 1fr;
-    /* grid-column: 1 / -1; */
+    grid-column: 1 / -1;
 }
 
 .slide-wrapper {
     overflow: hidden;
-    /* grid-column: 1 /-1; */
+    grid-column: 1 /-1;
 }
 
 .slide {
@@ -43,8 +42,8 @@
 
 [data-control="slide"] li a {
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: #fb5;
     overflow: hidden;
@@ -58,7 +57,7 @@
 }
 
 .custom-controls {
-    /* grid-column: 1 / -1; */
+    grid-column: 1 / -1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

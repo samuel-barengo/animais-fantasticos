@@ -51,7 +51,7 @@
         animation: show-right .3s forwards;
     }
 
-    .js [dropdown-menu] {
+    .js .dropdown-menu {
         position: static;
         border: none;
     }

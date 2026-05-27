@@ -9,7 +9,6 @@
 ## 📸 Preview
 
 ![Tela inicial do projeto](./preview-home.png)
-![Seção de contato com mapa e Bitcoin](/preview-tooltip.png)
 ![Tooltip dinâmica](./preview-tooltip.png)
 
 ---
